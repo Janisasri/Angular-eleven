@@ -11,6 +11,18 @@ import { HitButtonComponent } from './hit-button/hit-button.component';
 import { FormComponent } from './form/form.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HomePageComponent } from './home-page/home-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import{MatToolbarModule} from '@angular/material/toolbar';
+import { ProjectLinksComponent } from './project-links/project-links.component';
+import { TasksListsComponent } from './tasks-lists/tasks-lists.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,13 +33,22 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     CounterDisplayComponent,
     HitButtonComponent,
     FormComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    HomePageComponent,
+    ProjectLinksComponent,
+    TasksListsComponent,
+    AboutMeComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
