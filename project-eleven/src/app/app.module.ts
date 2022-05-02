@@ -8,6 +8,9 @@ import { LifeCycleChildComponent } from './life-cycle-child/life-cycle-child.com
 import { CounterAppComponent } from './counter-app/counter-app.component';
 import { CounterDisplayComponent } from './counter-display/counter-display.component';
 import { HitButtonComponent } from './hit-button/hit-button.component';
+import { FormComponent } from './form/form.component';
+import { EmployeeFormComponent } from './employee-form/employee-form.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,15 @@ import { HitButtonComponent } from './hit-button/hit-button.component';
     LifeCycleChildComponent,
     CounterAppComponent,
     CounterDisplayComponent,
-    HitButtonComponent
+    HitButtonComponent,
+    FormComponent,
+    EmployeeFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
